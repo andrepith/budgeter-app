@@ -11,7 +11,6 @@ const EditExpensePage = (props) => {
                 onSubmit={(expense) => {
                     props.dispatch(editExpense(props.expense.id, expense));
                     props.history.push('/');
-                    console.log('updated', expense);
                 }}
             />
             <button onClick={() => {
